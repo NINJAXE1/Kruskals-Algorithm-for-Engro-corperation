@@ -82,8 +82,8 @@ if answer == 'yes' and answer2 == 'no':
     for i in range(n):
         matrix[i][i] = 0
     for edge in edges1_ultimate_final:
-        node_index[edge.u] = i
-        node_index[edge.v] = j
+        i = node_index[edge.u]
+        j = node_index[edge.v]
         matrix[i][j] = matrix[j][i] = edge.weight
     nmatrix = np.matrix
     mst = []
