@@ -1,2 +1,2 @@
-# Kruskals-Algorithm-for-Engro-corperation
-# Kruskals-Algorithm-for-Engro-corperation
+# MinuimSpanningTree-Algorithm-for-Engro-corperation
+# MinuimSpanningTree-for-Engro-corperation
