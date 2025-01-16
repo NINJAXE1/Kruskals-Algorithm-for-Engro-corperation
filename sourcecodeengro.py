@@ -79,8 +79,8 @@ if answer == 'yes' and answer2 == 'no':
     node_index = {node:i for i,node in enumerate(nodes)}
     n = len(nodes)
     matrix = [[float("inf") * n ] for _ in range(n)]
-    for i in range(n):
-        matrix[i][i] = 0
+    for i,j in range(n):
+        matrix[i][j] = 0
     for edge in edges1_ultimate_final:
         i = node_index[edge.u]
         j = node_index[edge.v]
