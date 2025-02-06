@@ -1,4 +1,4 @@
-import requests
+lpgtimport requests
 import numpy as np
 API_KEY = "DD"
 print("Minuim Spanning tree")
@@ -78,7 +78,7 @@ if answer == 'yes' and answer2 == 'no':
     nodes = sorted({edge.u for edge in edges1_ultimate_final}.union({edge.v for edge in edges1_ultimate_final}))
     node_index = {node:i for i,node in enumerate(nodes)}
     n = len(nodes)
-    matrix = [[float("inf") * n ] for _ in range(n)]
+    matrix = [[1 * n for _ in range(n)] for _ in range(n)]\
     for i,j in range(n):
         matrix[i][j] = 0
     for edge in edges1_ultimate_final:
